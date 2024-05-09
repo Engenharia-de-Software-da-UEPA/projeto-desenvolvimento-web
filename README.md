@@ -3,6 +3,8 @@
 ## Para adicionar o repositório na sua máquina, execute o determinado código no terminal:
 * Adicione o repositório na sua máquina
 
+`git init`: Inicia o repositório git na pasta de sua escolha
+
 `git remote add origin https://github.com/Engenharia-de-Software-da-UEPA/projeto-desenvolvimento-web.git`
 
 ## Antes de começar a codar, siga estes passos para atualizar seu repositório
