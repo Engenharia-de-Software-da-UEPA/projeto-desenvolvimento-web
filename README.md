@@ -9,8 +9,6 @@
 
 `git status`: Verifica se há alguma alteração no seu repositório local.
 
-`git add nome-do-arquivo || git add .`: estes comandos adicionam os arquivos selecionados para a area de stage (commit). o comando que possui `.` adiciona todos os arquivos modificados para a área de stage (commit).
-
 `git pull origin main`: este comando é para baixar e mesclar as alterações do repositório remoto para o seu repositório local. Se houver conflitos entre as alterações locais e as atualizações do repositório remoto, você precisará resolvê-los manualmente. O Git irá avisá-lo sobre esses conflitos durante o processo de mesclagem.
 
 `git status`: Após a atualização, é uma boa prática verificar o status do seu repositório novamente para garantir que tudo esteja atualizado e em ordem.
