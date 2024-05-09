@@ -1,38 +1,75 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+*{
+  padding: 0;
+  margin: 0;
+}
 
-body {
-    margin: 0;
-    font-family: "Montserrat", sans-serif;
+body{
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
   }
   
-  header {
-    background-color: #110a69;
-    color: #fff;
-    padding: 10px 0;
-  }
+header{
+  background-color: #110a69;
+  color: #fff;
+  padding: 10px 0;
+}
 
-  .TituloHeader{
-    position: relative;
-    left: 30px;
-  }
-  
-  nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  nav ul li {
-    display: inline;
-  }
-  
-  nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    padding: 10px 20px;
-  }
-  
-  nav ul li a:hover {
-    background-color: #5c66ff;
-  }
+.TituloHeader{
+  position: relative;
+  left: 30px;
+}
+
+.cabecalho__itens{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cabecalho__itens__item{
+  display: inline;
+}
+
+.cabecalho__itens__link {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
+.cabecalho__itens__link:hover {
+  background-color: #5c66ff;
+}
+
+main{
+  background-color: white;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  margin: 2% 5%;
+}
+
+.noticiaPrincipal{
+  border: 6px solid black;
+  border-radius: 12px;
+  padding: 30px 40px;
+  text-align: center;
+}
+
+.noticiasSecundarias ul{
+  list-style: none;
+  background-color: gray;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px ;
+}
+
+.noticiasSecundarias ul li {
+  border: 2px solid black; 
+  border-radius: 8px;
+  padding: 10px;
+  margin-right: 10px; 
+}
