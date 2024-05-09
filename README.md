@@ -1,6 +1,6 @@
 # Projeto Desenvolvimento Web
 
-## Para adicionar o repositório na sua máquina, exetuce os determinados códigos no terminal:
+## Para adicionar o repositório na sua máquina, execute o determinado código no terminal:
 * Adicione o repositório na sua máquina
 
 `git remote add origin https://github.com/Engenharia-de-Software-da-UEPA/projeto-desenvolvimento-web.git`
