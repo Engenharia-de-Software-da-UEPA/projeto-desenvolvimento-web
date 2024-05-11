@@ -1,26 +1,52 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UEPA Hub</title>
+    <title>UEPANews</title>
     <link rel="stylesheet" href="Style.css">
 </head>
+
 <body>
     <header>
-        <h1 class="TituloHeader">UEPA Hub</h1>
-        <a class="TituloHeader" href="/">Fazer login</a>
-        <nav>
-            <ul>
-              <li><a href="#" class="active">Home</a></li>
-              <li><a href="#">Sobre</a></li>
-              <li><a href="#">Serviços</a></li>
-              <li><a href="#">Contato</a></li>
+        <h1 class="TituloHeader">UEPA Hub (logo)</h1>
+        <nav class="cabecalho">
+            <ul class="cabecalho__itens">
+                <li class="cabecalho__itens__item"><a class="cabecalho__itens__link" href="#">Home</a></li>
+                <li class="cabecalho__itens__item"><a class="cabecalho__itens__link" href="#">Sobre</a></li>
+                <!-- Esse menu precisa passar por revisão. Acredito que essas informações não são essenciais para estarem no menu principal - JP -->
+                <li class="cabecalho__itens__item"><a class="cabecalho__itens__link" href="#">Serviços</a></li>
+                <li class="cabecalho__itens__item"><a class="cabecalho__itens__link" href="#">Contato</a></li>
             </ul>
-          </nav>
+        </nav>
     </header>
-    <div class="forum">
-        <p class="ForumTitulo" >Forum</p>
+    <main>
+        <div class="forumNoticias">
+            <div class="NoticiasAll">
+                <div class="noticiaPrincipalDiv">
+                    <h1>Notícia Principal</h1>
+                </div>
+                <div class="noticiasSecundariasDiv">
+                    <ul class="listaNoticia1">    
+                        <li class="noticiasSecListaUpLeft">Notícia Secundária 1</li>
+                        <li class="noticiasSecListaUpRight">Notícia Secundária 2</li>
+                        <li class="noticiasSecListaDownLeft">Notícia Secundária 1</li>
+                        <li class="noticiasSecListaDownRight">Notícia Secundária 2</li>
+                    </ul>
+                </div>
+                
+            </div>
+            <div class="forumDiv">
+                <div class="itensForumDiv">
+                    <a class="itensForumLink" href="#">Criar Tópico</a></li>
+                    <a class="itensForumLink" href="https://apresentacaooisraelzindela.my.canva.site/israelzindelas">Fórum da comunidade</a></li>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
     </div>
 </body>
+
 </html>
