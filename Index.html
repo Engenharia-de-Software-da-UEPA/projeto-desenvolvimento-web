@@ -4,20 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UEPANews</title>
     <link rel="stylesheet" href="Style.css">
+    <link rel="icon" href="imagens/uepafavicon.png" type="image/png">
+    <title>UEPA Hub: Seu espaço virtual de comunicação universitária</title>
 </head>
 
 <body>
     <header>
-        <h1 class="TituloHeader">UEPA Hub (logo)</h1>
-        <nav class="cabecalho">
+        <picture>
+          <source srcset="imagens/uepahublogo.png"
+          media="(min-width: 600px)">
+          <img class="cabecalho__uepa_hub_logo" src="imagens/uepahublogo.png">
+        </picture>
+        <nav class="cabecalho__navegacao">
             <ul class="cabecalho__itens">
-                <li class="cabecalho__itens__item"><a class="cabecalho__itens__link" href="#">Home</a></li>
-                <li class="cabecalho__itens__item"><a class="cabecalho__itens__link" href="#">Sobre</a></li>
+                <li class="cabecalho__itens__item"><a class="cabecalho__itens__link" href="#">Em alta</a></li>
+                <li class="cabecalho__itens__item"><a class="cabecalho__itens__link" href="#">Recentes</a></li>
                 <!-- Esse menu precisa passar por revisão. Acredito que essas informações não são essenciais para estarem no menu principal - JP -->
-                <li class="cabecalho__itens__item"><a class="cabecalho__itens__link" href="#">Serviços</a></li>
-                <li class="cabecalho__itens__item"><a class="cabecalho__itens__link" href="#">Contato</a></li>
+                <li class="cabecalho__itens__item"><a class="cabecalho__itens__link" href="#">Eventos</a></li>
+                <li class="cabecalho__itens__item"><a class="cabecalho__itens__link" href="#">Fórum</a></li>
             </ul>
         </nav>
     </header>
@@ -63,28 +68,6 @@
 
     </main>
     <footer></footer>
-  <header>
-    <h1 class="TituloHeader">UEPA Hub (logo)</h1>
-    <nav class="cabecalho">
-      <ul class="cabecalho__itens">
-        <li class="cabecalho__itens__item"><a class="cabecalho__itens__link" href="#">Home</a></li>
-        <li class="cabecalho__itens__item"><a class="cabecalho__itens__link" href="#">Sobre</a></li>
-        <!-- Esse menu precisa passar por revisão. Acredito que essas informações não são essenciais para estarem no menu principal - JP -->
-        <li class="cabecalho__itens__item"><a class="cabecalho__itens__link" href="#">Serviços</a></li>
-        <li class="cabecalho__itens__item"><a class="cabecalho__itens__link" href="#">Contato</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <h1 class="noticiaPrincipal">Notícia Principal</h1>
-    <div class="noticiasSecundarias">
-      <ul>
-        <li>Notícia Secundária 1</li>
-        <li>Notícia Secundária 2</li>
-      </ul>
-    </div>
-  </main>
-  <footer></footer>
 </body>
 
 </html>

@@ -11,20 +11,28 @@ body {
 }
 
 header {
-  background-color: #110a69;
+  background-color: #2C2F73;
+  padding: 0;
   color: #fff;
-  padding: 10px 0;
 }
 
-.TituloHeader {
+.cabecalho__uepa_hub_logo {
   position: relative;
-  margin-left: 30px;
+  margin-top: 10px;
+  margin-left: 20px;
+  height: 75px;
+  width: 150px;
+}
+
+.cabecalho__navegacao {
+  background-color: #414393;
+  height: 39px;
 }
 
 .cabecalho__itens {
   list-style-type: none;
-  padding: 0;
-  margin-top: 20px;
+  padding-top: 10px;
+  margin-top: 10px;
 }
 
 .cabecalho__itens__item {
@@ -38,7 +46,7 @@ header {
 }
 
 .cabecalho__itens__link:hover {
-  background-color: #5c66ff;
+  background-color: #D90D1E;
 }
 
 main {
