@@ -1,34 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-*{
+* {
   padding: 0;
   margin: 0;
 }
 
-body{
+body {
   box-sizing: border-box;
-  margin: 0;
   font-family: "Montserrat", sans-serif;
-  }
-  
-header{
+}
+
+header {
   background-color: #110a69;
   color: #fff;
   padding: 10px 0;
 }
 
-.TituloHeader{
+.TituloHeader {
   position: relative;
-  left: 30px;
+  margin-left: 30px;
 }
 
-.cabecalho__itens{
+.cabecalho__itens {
   list-style-type: none;
-  margin: 0;
   padding: 0;
+  margin-top: 20px;
 }
 
-.cabecalho__itens__item{
+.cabecalho__itens__item {
   display: inline;
 }
 
@@ -42,34 +41,111 @@ header{
   background-color: #5c66ff;
 }
 
-main{
+main {
   background-color: white;
   color: black;
-  display: flex;
-  flex-direction: column;
-  margin: 2% 5%;
+  margin: 50px;
+  margin-left: 200px;
+  margin-right: 200px;
 }
 
-.noticiaPrincipal{
+/*Configurações das divs de Fórum e Notícias da Tela Inicial*/
+
+.container1 {
+  
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+
+}
+
+.forumNoticias {
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 175px 175px 175px 175px;
+  gap: 30px 100px;
+
+
+}
+
+.noticiaPrincipalDiv {
   border: 6px solid black;
-  border-radius: 12px;
-  padding: 30px 40px;
+  border-radius: 50px;
+  text-align: center;
+  grid-column-end: span 2;
+  grid-row-end: span 2;
+
+
+}
+
+.forumDiv {
+  border: 6px solid black;
+  border-radius: 50px;
+  text-align: center;
+  grid-row-end: span 4;
+  grid-column-end: span 2;
+
+}
+
+.noticia {
+  border: 6px solid black;
+  border-radius: 50px;
   text-align: center;
 }
 
-.noticiasSecundarias ul{
-  list-style: none;
-  background-color: gray;
-  display: flex;
-  flex-direction: row;
+/*Botões da div de Fórum da tela inicial*/
+
+.itensForumDiv {
   justify-content: center;
-  align-items: center;
-  padding: 12px ;
+  display: flex;
+  gap: 50px;
+
 }
 
-.noticiasSecundarias ul li {
-  border: 2px solid black; 
-  border-radius: 8px;
-  padding: 10px;
-  margin-right: 10px; 
+.itensForumLink {
+  justify-content: center;
+  text-decoration: none;
+  background-color: #110a69;
+  padding: 10px 0;
+  margin-top: 30px;
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  border-radius: 14px;
+  width: 300px;
+}
+
+.itensForumLink:hover {
+  background-color: #5c66ff;
+  color: white;
+}
+
+.itensForumLink:active {
+  background-color: #161e91;
+}
+
+/*Tela 2, Configurações do campo de noticias especificas*/
+
+.container2{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.noticiasEspecificas{
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 200px);
+  gap: 60px 60px;
+
+}
+
+.noticiaEsp{
+  border: 6px solid black;
+  border-radius: 50px;
+  text-align: center;
 }
