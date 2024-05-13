@@ -4,6 +4,7 @@
   padding: 0;
   margin: 0;
 }
+
 body {
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
@@ -156,29 +157,36 @@ main {
   border-radius: 50px;
   text-align: center;
 }
-footer{
-  background-color: #110a69;
+
+footer {
+  background-color: #2C2F73;
   color: #fff;
-  box-sizing: border-box;
   letter-spacing: 1px;
   width: 100%;
 }
-#footer_conteudo{
+
+.rodape__uepa_hub_logo {
+  position: relative;
+  height: 75px;
+  width: 150px;
+}
+
+#rodape_conteudo {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: space-evenly;
   padding: 20px;
-  font-family: "Montserrat", sans-serif;
 }
-#footer_contatos{
-  font-family: "Montserrat", sans-serif;
-}
-.footer_link{
+
+.rodape_link {
   color: white;
 }
-.footer_link:hover{
-  background-color: #5c66ff;
+
+.rodape_link:hover {
+  background-color: #D90D1E;
 }
-#footer_topicos2{
+
+#rodape_topicos2 {
   margin-top: 20px;
 }
