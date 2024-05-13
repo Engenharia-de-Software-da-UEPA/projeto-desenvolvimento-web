@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="icon" href="imagens/uepafavicon.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <title>UEPA Hub: Seu espaço virtual de comunicação universitária</title>
 </head>
 
@@ -19,7 +23,7 @@
             <ul class="cabecalho__itens">
                 <li class="cabecalho__itens__item"><a class="cabecalho__itens__link" href="#">Em alta</a></li>
                 <li class="cabecalho__itens__item"><a class="cabecalho__itens__link" href="#">Recentes</a></li>
-                <!-- Esse menu precisa passar por revisão. Acredito que essas informações não são essenciais para estarem no menu principal - JP -->
+                <li class="cabecalho__itens__item"><a class="cabecalho__itens__link" href="#">Notícias</a></li>
                 <li class="cabecalho__itens__item"><a class="cabecalho__itens__link" href="#">Eventos</a></li>
                 <li class="cabecalho__itens__item"><a class="cabecalho__itens__link" href="#">Fórum</a></li>
             </ul>
@@ -64,54 +68,47 @@
                 <div class="noticiaEsp">Noticia</div>
             </div>
         </div>
-
     </main>
     <footer>
-            <div id="footer_conteudo">
-                <div id="footer_contatos">
-                  <h3>(Logo UEPA Hub)</h3>
-                  <p>Nossas Redes Sociais.</p>
-                
-                  <!-- Redes Sociais -->
-                  <div id="footer_redes_sociais">
-                    <!-- Instagram UEPA -->
-                    <a href="https://www.instagram.com/uepa.parauapebas/" target="_blank" class="footer_link" id="instagram">
-                      <i class="fa-brands fa-instagram"></i>
-                   </a>
-                    <!-- Instagram Engenharia de Software -->
-                    <a href="https://www.instagram.com/eng.software2023/" target="_blank" class="footer_link" id="instagram2">
-                      <i class="fa-brands fa-instagram"></i>
-                    </a>
-                  </div>
-                </div>
-                <!-- Receber Emails -->
-                <div id="footer_email">
-                  <h3>Inscreva-se</h3>
-                    <p>Receba as noticías de primeira mão em seu email</p>
-                      <!-- Botão -->
-                    <div id="inserir_email">
-                      <input type="email" id="email">
-                      <button>
-                          <i class="fa-regular fa-envelope"></i>
-                      </button>
-                    </div>
-              </div>
-              <div id="footer_topicos">
+        <div id="rodape_conteudo">
+            <div id="rodape_contatos">
+                <picture>
+                    <source srcset="imagens/uepahublogo.png"
+                    media="(min-width: 600px)">
+                    <img class="rodape__uepa_hub_logo" src="imagens/uepahublogo.png">
+                </picture><br>
+                <i class="fa-brands fa-instagram"></i>
+                <a href="https://www.instagram.com/uepa.parauapebas/" target="_blank"
+                class="rodape_link" id="instagram">@uepa.parauapebas</a><br>
+                <i class="fa-brands fa-instagram"></i>
+                <a href="https://www.instagram.com/eng.software2023/" target="_blank"
+                class="rodape_link" id="instagram2">@eng.software2023</a>
+            </div>
+            <div id="rodape_email">
+                <h3>Inscreva-se</h3>
+                <p>Receba as noticías de primeira mão em seu email</p>
+                <input type="email" id="email">
+                <button>
+                    <i class="fa-regular fa-envelope"></i>
+                </button>
+            </div>
+            <div id="rodape_topicos">
                 <h3>Tópicos</h3>
                 <ul>
-                  <li>Tópico 1</li>
-                  <li>Tópico 2</li>
-                  <li>Tópico 3</li>
+                    <li>Tópico 1</li>
+                    <li>Tópico 2</li>
+                    <li>Tópico 3</li>
                 </ul>
-              </div>
-              <div id="footer_topicos2">
-                <ul>
-                  <li>Tópico 4</li>
-                  <li>Tópico 5</li>
-                  <li>Tópico 6</li>
-                </ul>
-              </div>
             </div>
-          </footer>
+            <div id="rodape_topicos2">
+                <ul>
+                    <li>Tópico 4</li>
+                    <li>Tópico 5</li>
+                    <li>Tópico 6</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>
