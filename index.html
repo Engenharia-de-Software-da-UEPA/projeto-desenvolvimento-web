@@ -3,34 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UEPA Hub</title>
-    <!-- Logos -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />"
     <link rel="stylesheet" href="Style.css">
+    <link rel="icon" href="imagens/uepafavicon.png" type="image/png">
+    <title>UEPA Hub: Seu espaço virtual de comunicação universitária</title>
 </head>
+
 <body>
     <header>
-        <h1 class="TituloHeader">UEPA Hub (logo)</h1>
-        <nav class="cabecalho">
+        <picture>
+          <source srcset="imagens/uepahublogo.png"
+          media="(min-width: 600px)">
+          <img class="cabecalho__uepa_hub_logo" src="imagens/uepahublogo.png">
+        </picture>
+        <nav class="cabecalho__navegacao">
             <ul class="cabecalho__itens">
-              <li class="cabecalho__itens__item"><a class="cabecalho__itens__link" href="#">Home</a></li>
-              <li class="cabecalho__itens__item"><a class="cabecalho__itens__link" href="#">Sobre</a></li>
-              <!-- Esse menu precisa passar por revisão. Acredito que essas informações não são essenciais para estarem no menu principal - JP -->
-              <li class="cabecalho__itens__item"><a class="cabecalho__itens__link" href="#">Serviços</a></li>
-              <li class="cabecalho__itens__item"><a class="cabecalho__itens__link" href="#">Contato</a></li>
+                <li class="cabecalho__itens__item"><a class="cabecalho__itens__link" href="#">Em alta</a></li>
+                <li class="cabecalho__itens__item"><a class="cabecalho__itens__link" href="#">Recentes</a></li>
+                <!-- Esse menu precisa passar por revisão. Acredito que essas informações não são essenciais para estarem no menu principal - JP -->
+                <li class="cabecalho__itens__item"><a class="cabecalho__itens__link" href="#">Eventos</a></li>
+                <li class="cabecalho__itens__item"><a class="cabecalho__itens__link" href="#">Fórum</a></li>
             </ul>
-          </nav>
-          <main>
-              <h1 class="noticiaPrincipal">Notícia Principal</h1>
-              <div class="noticiasSecundarias">
-                <ul>
-                  <li>Notícia Secundária 1</li>
-                  <li>Notícia Secundária 2</li>
-                </ul>  
-              </div>
-          </main>
-          <!-- Rodapé -->
-          <footer>
+        </nav>
+    </header>
+    <main>
+        <div class="container1">
+            <div class="forumNoticias">
+                <div class="noticiaPrincipalDiv">Noticia principal</div>
+                <div class="forumDiv">
+                    <div class="itensForumDiv">
+                        <a class="itensForumLink" href="#">Criar Tópico</a></li>
+                        <a class="itensForumLink"
+                            href="https://apresentacaooisraelzindela.my.canva.site/israelzindelas">Fórum
+                            da comunidade</a>
+                    </div>
+                </div>
+                <div class="noticia Noticia1">Noticia 1</div>
+                <div class="noticia Noticia2">Noticia 2</div>
+                <div class="noticia Noticia3">Noticia 3</div>
+                <div class="noticia Noticia4">Noticia 4</div>
+
+            </div>
+        </div>
+        <div class="container2">
+            <div class="noticiasEspecificas">
+                <div class="noticiaEsp">Noticia</div>
+                <div class="noticiaEsp">Noticia</div>
+                <div class="noticiaEsp">Noticia</div>
+                <div class="noticiaEsp">Noticia</div>
+                <div class="noticiaEsp">Noticia</div>
+                <div class="noticiaEsp">Noticia</div>
+                <div class="noticiaEsp">Noticia</div>
+                <div class="noticiaEsp">Noticia</div>
+                <div class="noticiaEsp">Noticia</div>
+                <div class="noticiaEsp">Noticia</div>
+                <div class="noticiaEsp">Noticia</div>
+                <div class="noticiaEsp">Noticia</div>
+                <div class="noticiaEsp">Noticia</div>
+                <div class="noticiaEsp">Noticia</div>
+                <div class="noticiaEsp">Noticia</div>
+                <div class="noticiaEsp">Noticia</div>
+            </div>
+        </div>
+
+    </main>
+    <footer>
             <div id="footer_conteudo">
                 <div id="footer_contatos">
                   <h3>(Logo UEPA Hub)</h3>
@@ -77,6 +113,5 @@
               </div>
             </div>
           </footer>
-    </header>
 </body>
 </html>
