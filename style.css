@@ -49,48 +49,37 @@ header {
   background-color: #D90D1E;
 }
 
-main {
-  background-color: white;
-  color: black;
-  margin: 50px;
-  margin-left: 200px;
-  margin-right: 200px;
-}
-
 /*Configurações das divs de Fórum e Notícias da Tela Inicial*/
 
-.container1 {
-  
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  position: relative;
-
-}
-
 .forumNoticias {
-
+  margin: 30px 200px;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 175px 175px 175px 175px;
-  gap: 30px 100px;
-
+  grid-template-columns: repeat(auto-fit, minmax(300px, 200px));
+  grid-auto-rows: minmax(160px, auto);
+  gap: 30px 30px;
+  justify-content: center;
 
 }
+
 
 .noticiaPrincipalDiv {
+  display: flex;
+  align-items: end;
+  justify-content: center;
   border: 6px solid black;
-  border-radius: 50px;
+  border-radius: 30px;
   text-align: center;
   grid-column-end: span 2;
   grid-row-end: span 2;
-
+  background-image: url(/imagens/UEPA.png);
+  background-size: cover;
+  background-position: bottom;
 
 }
 
 .forumDiv {
   border: 6px solid black;
-  border-radius: 50px;
+  border-radius: 30px;
   text-align: center;
   grid-row-end: span 4;
   grid-column-end: span 2;
@@ -99,8 +88,20 @@ main {
 
 .noticia {
   border: 6px solid black;
-  border-radius: 50px;
+  border-radius: 30px;
   text-align: center;
+}
+
+.tituloNoticia {
+
+  background-color: white;
+  border-radius: 10px;
+  padding: 5px;
+  width: 500px;
+  height: 20px;
+  font-size: 19px;
+  margin-bottom: 10px;
+  font-weight: bold;
 }
 
 /*Botões da div de Fórum da tela inicial*/
@@ -108,7 +109,7 @@ main {
 .itensForumDiv {
   justify-content: center;
   display: flex;
-  gap: 50px;
+  gap: 30px;
 
 }
 
@@ -121,12 +122,12 @@ main {
   color: white;
   font-size: 22px;
   font-weight: bold;
-  border-radius: 14px;
-  width: 300px;
+  border-radius: 15px;
+  width: 275px;
 }
 
 .itensForumLink:hover {
-  background-color: #5c66ff;
+  background-color: #D90D1E;
   color: white;
 }
 
@@ -136,24 +137,44 @@ main {
 
 /*Tela 2, Configurações do campo de noticias especificas*/
 
-.container2{
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  position: relative;
-}
+.noticiasEspecificas {
 
-.noticiasEspecificas{
-  margin-top: 100px;
+  margin: 30px 200px;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 200px);
-  gap: 60px 60px;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 200px));
+  grid-auto-rows: minmax(160px, auto);
+  gap: 30px;
 
 }
 
-.noticiaEsp{
+.noticiaEsp {
   border: 6px solid black;
-  border-radius: 50px;
+  border-radius: 30px;
   text-align: center;
+}
+
+.botoesNoticias {
+  margin: 35px 200px;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 200px));
+  grid-auto-rows: minmax(20px, auto);
+  gap: 30px;
+
+}
+
+.botoesNoticias a {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  background-color: #110a69;
+  padding: 10px 0;
+  margin-top: 30px;
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  border-radius: 15px;
+  width: 275px;
+  
 }
