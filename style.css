@@ -5,9 +5,17 @@
   margin: 0;
 }
 
+*::selection {
+  background-color: #D90D1E;
+}
+
 body {
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
+}
+
+li {
+  list-style-type: none;
 }
 
 header {
@@ -16,7 +24,14 @@ header {
   color: #fff;
 }
 
-.cabecalho__uepa_hub_logo {
+.cabecalho__inicial {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cabecalho__inicial__logo {
   position: relative;
   margin-top: 10px;
   margin-left: 20px;
@@ -24,8 +39,33 @@ header {
   width: 150px;
 }
 
+.cabecalho__inicial__slogan {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.cabecalho__inicial__perfil {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cabecalho__inicial__perfil__usuario {
+  display: inline;
+  padding-top: 9px;
+  font-weight: bold;
+}
+
+.cabecalho__inicial__perfil__foto {
+  margin-top: 10px;
+  margin-right: 20px;
+  height: 50px;
+  width: 50px;
+}
+
 .cabecalho__navegacao {
   background-color: #414393;
+  padding-left: 15px;
   height: 39px;
 }
 
@@ -37,6 +77,13 @@ header {
 
 .cabecalho__itens__item {
   display: inline;
+}
+
+.cabecalho__itens__link__selecionado {
+  background-color: #D90D1E;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
 }
 
 .cabecalho__itens__link {
@@ -165,13 +212,13 @@ footer {
   width: 100%;
 }
 
-.rodape__uepa_hub_logo {
+.rodape__uepa__hub__logo {
   position: relative;
   height: 75px;
   width: 150px;
 }
 
-#rodape_conteudo {
+.rodape__conteudo {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -179,14 +226,40 @@ footer {
   padding: 20px;
 }
 
-.rodape_link {
-  color: white;
+.rodape__inserir__email {
+  background-color: #7172AE;
+  margin-top: 10px;
+  color: #F2F2F2;
+  font-size: 16px;
+  height: 25px;
+  width: 300px;
+  border-style: none;
+  border-radius: 8px;
+  padding-left: 10px;
 }
 
-.rodape_link:hover {
+.rodape__botao {
+  background-color: #A0A0C9;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  height: 25px;
+  width: 30px;
+  border-style: none;
+  border-radius: 8px;
+}
+
+.rodape__botao:hover {
   background-color: #D90D1E;
 }
 
-#rodape_topicos2 {
-  margin-top: 20px;
+.rodape__link {
+  color: white;
+}
+
+.rodape__link:hover {
+  background-color: #D90D1E;
+}
+
+.rodape__topicos2 {
+  margin-bottom: 20px;
 }

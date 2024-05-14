@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="wclassth=device-wclassth, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="imagens/uepafavicon.png" type="image/png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
@@ -14,18 +14,30 @@
 
 <body>
     <header>
-        <picture>
-          <source srcset="imagens/uepahublogo.png"
-          media="(min-width: 600px)">
-          <img class="cabecalho__uepa_hub_logo" src="imagens/uepahublogo.png">
-        </picture>
+        <div class="cabecalho__inicial">
+            <picture>
+                <source srcset="imagens/uepahublogo.png"
+                media="(min-wclassth: 600px)">
+                <img class="cabecalho__inicial__logo" src="imagens/uepahublogo.png">
+            </picture>
+            <p class="cabecalho__inicial__slogan">Seu espaço virtual de comunicação universitária</p>
+            <div class="cabecalho__inicial__perfil">    
+                <p class="cabecalho__inicial__perfil__usuario">Usuário Teste</p>
+                <picture>
+                    <source srcset="imagens/uepahublogo.png"
+                    media="(min-wclassth: 600px)">
+                    <img class="cabecalho__inicial__perfil__foto" src="imagens/uepahubperfilbranco.png">
+                </picture>
+            </div>
+        </div>
         <nav class="cabecalho__navegacao">
             <ul class="cabecalho__itens">
-                <li class="cabecalho__itens__item"><a class="cabecalho__itens__link" href="#">Em alta</a></li>
+                <li class="cabecalho__itens__item"><a class="cabecalho__itens__link__selecionado" href="#">Em alta</a></li>
                 <li class="cabecalho__itens__item"><a class="cabecalho__itens__link" href="#">Recentes</a></li>
                 <li class="cabecalho__itens__item"><a class="cabecalho__itens__link" href="#">Notícias</a></li>
                 <li class="cabecalho__itens__item"><a class="cabecalho__itens__link" href="#">Eventos</a></li>
                 <li class="cabecalho__itens__item"><a class="cabecalho__itens__link" href="#">Fórum</a></li>
+                <li class="cabecalho__itens__item"><a class="cabecalho__itens__link" href="#">Calendário Acadêmico</a></li>
             </ul>
         </nav>
     </header>
@@ -36,9 +48,7 @@
                 <div class="forumDiv">
                     <div class="itensForumDiv">
                         <a class="itensForumLink" href="#">Criar Tópico</a></li>
-                        <a class="itensForumLink"
-                            href="https://apresentacaooisraelzindela.my.canva.site/israelzindelas">Fórum
-                            da comunidade</a>
+                        <a class="itensForumLink" href="https://apresentacaooisraelzindela.my.canva.site/israelzindelas">Fórum da comunclassade</a>
                     </div>
                 </div>
                 <div class="noticia Noticia1">Noticia 1</div>
@@ -70,41 +80,50 @@
         </div>
     </main>
     <footer>
-        <div id="rodape_conteudo">
-            <div id="rodape_contatos">
+        <div class="rodape__conteudo">
+            <div class="rodape__contatos">
                 <picture>
                     <source srcset="imagens/uepahublogo.png"
-                    media="(min-width: 600px)">
-                    <img class="rodape__uepa_hub_logo" src="imagens/uepahublogo.png">
+                    media="(min-wclassth: 600px)">
+                    <img class="rodape__uepa__hub__logo" src="imagens/uepahublogo.png">
                 </picture><br>
                 <i class="fa-brands fa-instagram"></i>
-                <a href="https://www.instagram.com/uepa.parauapebas/" target="_blank"
-                class="rodape_link" id="instagram">@uepa.parauapebas</a><br>
+                <a href="https://www.instagram.com/uepa.parauapebas/" target="__blank"
+                class="rodape__link">@uepa.parauapebas</a><br>
                 <i class="fa-brands fa-instagram"></i>
-                <a href="https://www.instagram.com/eng.software2023/" target="_blank"
-                class="rodape_link" id="instagram2">@eng.software2023</a>
+                <a href="https://www.instagram.com/eng.software2023/" target="__blank"
+                class="rodape__link">@eng.software2023</a>
             </div>
-            <div id="rodape_email">
-                <h3>Inscreva-se</h3>
-                <p>Receba as noticías de primeira mão em seu email</p>
-                <input type="email" id="email">
-                <button>
+            <div class="rodape__email">
+                <h3>Inscreva-se na UEPA Hub!</h3>
+                <p>
+                    Fique ligado em novas publicações e comunicados<br>
+                    diretamente através do seu e-mail.
+                </p>
+                <input class="rodape__inserir__email" type="email">
+                <button class="rodape__botao">
                     <i class="fa-regular fa-envelope"></i>
                 </button>
             </div>
-            <div id="rodape_topicos">
-                <h3>Tópicos</h3>
+            <div class="rodape__topicos">
+                <h3>Explore</h3>
                 <ul>
-                    <li>Tópico 1</li>
-                    <li>Tópico 2</li>
-                    <li>Tópico 3</li>
+                    <li><a class="rodape__link" href="#">Em alta</a></li>
+                    <li><a class="rodape__link" href="#">Recentes</a></li>
+                    <li><a class="rodape__link" href="#">Notícias</a></li>
+                    <li><a class="rodape__link" href="#">Eventos</a></li>
+                    <li><a class="rodape__link" href="#">Fórum</a></li>
+                    <li><a class="rodape__link" href="#">Calendário<br>Acadêmico</a></li>
                 </ul>
             </div>
-            <div id="rodape_topicos2">
+            <div class="rodape__topicos2">
+                <h3>Links úteis</h3>
                 <ul>
-                    <li>Tópico 4</li>
-                    <li>Tópico 5</li>
-                    <li>Tópico 6</li>
+                    <li><a class="rodape__link" href="#">Fale Conosco</a></li>
+                    <li><a class="rodape__link" href="#">FAQ: Perguntas<br>Frequentes</a></li>
+                    <li><a class="rodape__link" href="#">Criar Publicação</a></li>
+                    <li><a class="rodape__link" href="#">Criar Tópico</a></li>
+                    <li><a class="rodape__link" href="#">Meu Perfil</a></li>
                 </ul>
             </div>
         </div>
