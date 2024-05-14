@@ -183,6 +183,8 @@ header {
 }
 
 
+
+
 /*Botões da div de Fórum da tela inicial*/
 
 .itensForumDiv {
@@ -228,10 +230,37 @@ header {
 }
 
 .noticiaEsp {
-  border: 6px solid black;
   border-radius: 30px;
   text-align: center;
 }
+
+.recentes{
+  background-image: url(/imagens/Recentes.png);
+  background-size: cover;
+  background-position: bottom;
+  background-position: center;
+}
+.campus{
+  background-image: url(/imagens/uepaCampus.jpg);
+  background-size: cover;
+  background-position: bottom;
+  background-position: center;
+}
+
+.biologia{
+  background-image: url(/imagens/Biologia.png);
+  background-size: cover;
+  background-position: bottom;
+  background-position: center;
+}
+
+.software{
+  background-image: url(/imagens/Software3.jpg);
+  background-size: cover;
+  background-position: bottom;
+  background-position: center 250px;
+}
+
 .botoesNoticias {
   margin: 35px 200px;
   display: grid;
@@ -309,7 +338,23 @@ header {
   color: #110a69;
   font-size: 40px;
   }
-  
+
+  .botaoVerMais{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    background-color: #110a69;
+    padding: 10px 0;
+    margin-top: 30px;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    border-radius: 15px;
+    width: 275px;
+    margin-bottom: 30px;
+    
+  }
+
   /*Configurações do rodapé*/
 
 
