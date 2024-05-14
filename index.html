@@ -18,7 +18,9 @@
             <picture>
                 <source srcset="imagens/uepahublogo.png"
                 media="(min-wclassth: 600px)">
-                <img class="cabecalho__inicial__logo" src="imagens/uepahublogo.png">
+                <a href="/index.html">
+                    <img class="cabecalho__inicial__logo" src="imagens/uepahublogo.png">
+                </a>
             </picture>
             <p class="cabecalho__inicial__slogan">Seu espaço virtual de comunicação universitária</p>
             <div class="cabecalho__inicial__perfil">    
@@ -26,18 +28,20 @@
                 <picture>
                     <source srcset="imagens/uepahublogo.png"
                     media="(min-wclassth: 600px)">
-                    <img class="cabecalho__inicial__perfil__foto" src="imagens/uepahubperfilbranco.png">
+                    <a href="/paginas/meuperfil.html">
+                        <img class="cabecalho__inicial__perfil__foto" src="imagens/uepahubperfilbranco.png">
+                    </a>
                 </picture>
             </div>
         </div>
         <nav class="cabecalho__navegacao">
             <ul class="cabecalho__itens">
-                <li class="cabecalho__itens__item"><a class="cabecalho__itens__link__selecionado" href="#">Em alta</a></li>
-                <li class="cabecalho__itens__item"><a class="cabecalho__itens__link" href="#">Recentes</a></li>
-                <li class="cabecalho__itens__item"><a class="cabecalho__itens__link" href="#">Notícias</a></li>
-                <li class="cabecalho__itens__item"><a class="cabecalho__itens__link" href="#">Eventos</a></li>
-                <li class="cabecalho__itens__item"><a class="cabecalho__itens__link" href="#">Fórum</a></li>
-                <li class="cabecalho__itens__item"><a class="cabecalho__itens__link" href="#">Calendário Acadêmico</a></li>
+                <li class="cabecalho__itens__item"><a class="cabecalho__itens__link__selecionado" href="/index.html">Em alta</a></li>
+                <li class="cabecalho__itens__item"><a class="cabecalho__itens__link" href="/paginas/recentes.html">Recentes</a></li>
+                <li class="cabecalho__itens__item"><a class="cabecalho__itens__link" href="/paginas/noticias.html">Notícias</a></li>
+                <li class="cabecalho__itens__item"><a class="cabecalho__itens__link" href="/paginas/eventos.html">Eventos</a></li>
+                <li class="cabecalho__itens__item"><a class="cabecalho__itens__link" href="/paginas/forum.html">Fórum</a></li>
+                <li class="cabecalho__itens__item"><a class="cabecalho__itens__link" href="#calendario_academico">Calendário Acadêmico</a></li>
             </ul>
         </nav>
     </header>
@@ -49,8 +53,8 @@
                 </div>
                 <div class="forumDiv">
                     <div class="itensForumDiv">
-                        <a class="itensForumLink" href="#">Criar Tópico</a></li>
-                        <a class="itensForumLink" href="https://apresentacaooisraelzindela.my.canva.site/israelzindelas">Fórum da comunclassade</a>
+                        <a class="itensForumLink" href="/paginas/criarTopico.html">Criar Tópico</a></li>
+                        <a class="itensForumLink" href="/paginas/forum.html">Fórum da Comunidade</a>
                     </div>
                 </div>
                 <div class="noticia Noticia1"></div>
@@ -68,34 +72,49 @@
                 <div><a href="#">Biomedicina</a></div>
             </div>
             <div class="noticiasEspecificas">
-                <div class="noticiaEsp">Noticia</div>
-                <div class="noticiaEsp">Noticia</div>
-                <div class="noticiaEsp">Noticia</div>
-                <div class="noticiaEsp">Noticia</div>
-                <div class="noticiaEsp">Noticia</div>
-                <div class="noticiaEsp">Noticia</div>
-                <div class="noticiaEsp">Noticia</div>
-                <div class="noticiaEsp">Noticia</div>
-                <div class="noticiaEsp">Noticia</div>
-                <div class="noticiaEsp">Noticia</div>
-                <div class="noticiaEsp">Noticia</div>
-                <div class="noticiaEsp">Noticia</div>
-                <div class="noticiaEsp">Noticia</div>
-                <div class="noticiaEsp">Noticia</div>
-                <div class="noticiaEsp">Noticia</div>
-                <div class="noticiaEsp">Noticia</div>
+                <div class="noticiaEsp recentes"></div>
+                <div class="noticiaEsp campus"></div>
+                <div class="noticiaEsp software"></div>
+                <div class="noticiaEsp biologia"></div>
+                <div class="noticiaEsp recentes"></div>
+                <div class="noticiaEsp campus"></div>
+                <div class="noticiaEsp software"></div>
+                <div class="noticiaEsp biologia"></div>
+                <div class="noticiaEsp recentes"></div>
+                <div class="noticiaEsp campus"></div>
+                <div class="noticiaEsp software"></div>
+                <div class="noticiaEsp biologia"></div>
+                <div class="noticiaEsp recentes"></div>
+                <div class="noticiaEsp campus"></div>
+                <div class="noticiaEsp software"></div>
+                <div class="noticiaEsp biologia"></div>
             </div>
             <div class="botoesNoticias">
                 <div class="botaoTop"><a href="#">Editar Tópicos</a></div>
                 <div class="botaoMais"><a href="#">Mais Nóticias</a></div>
             </div>
         </div>
-        <div class="container3">
-            <div class="Calendario">
-                
-            </div>
+        <div class="container3" id="calendario_academico">
+            <p class="tituloCalendario">Calendário Acadêmico</p>
+            <div class="calendario">
+                <div class="dias"> Segunda-Feira</div>
+                <div class="dias"> Terça-Feira</div>
+                <div class="dias"> QuartaFeira</div>
+                <div class="dias"> Quinta-Feira</div>
+                <div class="dias"> Sexta-feira</div>
+                <div class="dias"> Sábado</div>
+                <div class="dias"> Domingo</div>
+                <div class="diasNum"> 1</div>
+                <div class="diasNum"> 2</div>
+                <div class="diasNum"> 3</div>
+                <div class="diasNum"> 4</div>
+                <div class="diasNum"> 5</div>
+                <div class="diasNum"> 6</div>
+                <div class="diasNum"> 7</div>
         </div>
+        <p class="botaoVerMais">Ver Mais</a></p>
     </main>
+    </div>
     <footer>
         <div class="rodape__conteudo">
             <div class="rodape__contatos">
@@ -125,22 +144,22 @@
             <div class="rodape__topicos">
                 <h3>Explore</h3>
                 <ul>
-                    <li><a class="rodape__link" href="#">Em alta</a></li>
-                    <li><a class="rodape__link" href="#">Recentes</a></li>
-                    <li><a class="rodape__link" href="#">Notícias</a></li>
-                    <li><a class="rodape__link" href="#">Eventos</a></li>
-                    <li><a class="rodape__link" href="#">Fórum</a></li>
-                    <li><a class="rodape__link" href="#">Calendário<br>Acadêmico</a></li>
+                    <li><a class="rodape__link" href="/index.html">Em alta</a></li>
+                    <li><a class="rodape__link" href="/paginas/recentes.html">Recentes</a></li>
+                    <li><a class="rodape__link" href="/paginas/noticias.html">Notícias</a></li>
+                    <li><a class="rodape__link" href="/paginas/eventos.html">Eventos</a></li>
+                    <li><a class="rodape__link" href="/paginas/forum.html">Fórum</a></li>
+                    <li><a class="rodape__link" href="/paginas/calendario.html">Calendário<br>Acadêmico</a></li>
                 </ul>
             </div>
             <div class="rodape__topicos2">
                 <h3>Links úteis</h3>
                 <ul>
-                    <li><a class="rodape__link" href="#">Fale Conosco</a></li>
-                    <li><a class="rodape__link" href="#">FAQ: Perguntas<br>Frequentes</a></li>
-                    <li><a class="rodape__link" href="#">Criar Publicação</a></li>
-                    <li><a class="rodape__link" href="#">Criar Tópico</a></li>
-                    <li><a class="rodape__link" href="#">Meu Perfil</a></li>
+                    <li><a class="rodape__link" href="mailto:joao.podsousa@aluno.uepa.br"><i class="fa-regular fa-envelope"></i> Fale Conosco</a></li>
+                    <li><a class="rodape__link" href="/paginas/faq.html">FAQ: Perguntas<br>Frequentes</a></li>
+                    <li><a class="rodape__link" href="/paginas/criarPublicacao.html">Criar Publicação</a></li>
+                    <li><a class="rodape__link" href="/paginas/criarTopico.html">Criar Tópico</a></li>
+                    <li><a class="rodape__link" href="/paginas/meuperfil.html">Meu Perfil</a></li>
                 </ul>
             </div>
         </div>

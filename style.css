@@ -27,7 +27,6 @@ header {
 }
 
 .cabecalho__inicial {
-
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -57,6 +56,7 @@ header {
 
 .cabecalho__inicial__perfil__usuario {
   display: inline;
+  text-align: right;
   padding-top: 9px;
   font-weight: bold;
 }
@@ -228,10 +228,37 @@ header {
 }
 
 .noticiaEsp {
-  border: 6px solid black;
   border-radius: 30px;
   text-align: center;
 }
+
+.recentes{
+  background-image: url(/imagens/Recentes.png);
+  background-size: cover;
+  background-position: bottom;
+  background-position: center;
+}
+.campus{
+  background-image: url(/imagens/uepaCampus.jpg);
+  background-size: cover;
+  background-position: bottom;
+  background-position: center;
+}
+
+.biologia{
+  background-image: url(/imagens/Biologia.png);
+  background-size: cover;
+  background-position: bottom;
+  background-position: center;
+}
+
+.software{
+  background-image: url(/imagens/Software3.jpg);
+  background-size: cover;
+  background-position: bottom;
+  background-position: center 250px;
+}
+
 .botoesNoticias {
   margin: 35px 200px;
   display: grid;
@@ -271,6 +298,62 @@ header {
       grid-template-rows: repeat(8, minmax(300px, 200px));
   }
 }
+
+ /*Configurações do calendário*/
+
+ .container3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.calendario {
+  margin: 30px 200px;
+  display: grid;
+  grid-template-columns: repeat(7, minmax(180px, 100px));
+  grid-template-rows: repeat(4, minmax(30px, auto));
+  justify-content: center;
+  gap: 5px 5px;
+}
+
+.botaoVerMais{
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  background-color: #110a69;
+  padding: 10px 0;
+  margin-top: 30px;
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  border-radius: 15px;
+  width: 275px;
+  margin-bottom: 30px;
+  
+}
+
+.dias {
+  background-color: #2C2F73;
+  color: white;
+  text-align: center;
+  align-content: center;
+  font-weight: bold;
+}
+.diasNum {
+  background-color: rgb(198, 198, 255);
+  grid-row-end: span 9;
+  text-align: end;
+}
+
+.tituloCalendario {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  color: #110a69;
+  font-size: 40px;
+}
+
 footer {
   background-color: #2C2F73;
   color: #fff;
@@ -326,6 +409,10 @@ footer {
   background-color: #D90D1E;
 }
 
-.rodape__topicos2 {
-  margin-bottom: 20px;
-}
+/* footer{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+
+} */
