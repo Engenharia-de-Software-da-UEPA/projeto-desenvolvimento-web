@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+header {
+  background-color: #2C2F73;
+  color: #fff;
+  box-shadow: 10px 10px 20px rgba(26, 26, 26, 0.582);
+  padding: 0;
+ 
+}
+
+.cabecalho__uepa_hub_logo {
+  position: relative;
+  margin-top: 10px;
+  margin-left: 20px;
+  height: 75px;
+  width: 150px;
+
+}
+
+.cabecalho__navegacao {
+  background-color: #414393;
+  height: 39px;
+
+}
+
+.cabecalho__itens {
+  list-style-type: none;
+  padding-top: 10px;
+  margin-top: 10px;
+
+}
+
+.cabecalho__itens__item {
+  display: inline;
+
+}
+
+.cabecalho__itens__link {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+
+}
+
+.cabecalho__itens__link:hover {
+  background-color: #D90D1E;
+}
+
+/*Configurações das divs de Fórum e Notícias da Tela Inicial*/
+
+.forumNoticias {
+  margin: 30px 200px;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(300px, 200px));
+  grid-auto-rows: minmax(160px, auto);
+  gap: 30px 30px;
+  justify-content: center;
+
+}
+
+.forumDiv {
+  border: 4px solid black;
+  border-radius: 30px;
+  text-align: center;
+  grid-row-end: span 4;
+  grid-column-end: span 2;
+
+}
+
+.noticiaPrincipalDiv {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  border-radius: 30px;
+  text-align: center;
+  grid-column-end: span 2;
+  grid-row-end: span 2;
+  background-image: url(/imagens/UEPA.png);
+  background-size: cover;
+  background-position: bottom;
+
+}
+
+.tituloNoticia {
+
+  background-color: white;
+  border-radius: 10px;
+  padding: 5px;
+  width: 500px;
+  height: 20px;
+  font-size: 19px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+
+.noticia {
+  border-radius: 30px;
+  text-align: center;
+}
+
+.Noticia1 {
+  background-image: url(/imagens/Medalhas.png);
+  background-size: cover;
+  background-position: bottom;
+}
+
+.Noticia2 {
+  background-image: url(/imagens/Reuniao.png);
+  background-size: cover;
+  background-position: bottom;
+}
+
+.Noticia3 {
+  background-image: url(/imagens/Formacao.png);
+  background-size: cover;
+  background-position: bottom;
+}
+
+.Noticia4 {
+  background-image: url(/imagens/Corredor.png);
+  background-size: cover;
+  background-position: bottom;
+}
+
+
+/*Botões da div de Fórum da tela inicial*/
+
+.itensForumDiv {
+  justify-content: center;
+  display: flex;
+  gap: 30px;
+
+}
+
+.itensForumLink {
+  justify-content: center;
+  text-decoration: none;
+  background-color: #110a69;
+  padding: 10px 0;
+  margin-top: 30px;
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  border-radius: 15px;
+  width: 275px;
+}
+
+.itensForumLink:hover {
+  background-color: #D90D1E;
+  color: white;
+}
+
+.itensForumLink:active {
+  background-color: #161e91;
+}
+
+/*Tela 2, Configurações do campo de noticias especificas*/
+
+.noticiasEspecificas {
+
+  margin: 30px 200px;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(4, minmax(300px, 200px));
+  grid-auto-rows: minmax(160px, auto);
+  gap: 30px;
+
+}
+
+.noticiaEsp {
+  border: 6px solid black;
+  border-radius: 30px;
+  text-align: center;
+}
+
+.botoesNoticias {
+  margin: 35px 200px;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(4, minmax(300px, 200px));
+  grid-auto-rows: minmax(20px, auto);
+  gap: 30px;
+
+}
+
+.botoesNoticias a {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  background-color: #110a69;
+  padding: 10px 0;
+  margin-top: 30px;
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  border-radius: 15px;
+  width: 275px;
+
+}
+
+.botaoTop {
+  grid-area: 1 / 2 / 3 / 3;
+}
+
+.botaoMais {
+  grid-area: 1 / 3 / 3 / 4;
+}
+
+@media (max-width: 1300px) {
+  .forumNoticias {
+      grid-template-columns: repeat(2, minmax(300px, 200px));
+      grid-template-rows: repeat(8, minmax(300px, 200px));
+  }
+}
