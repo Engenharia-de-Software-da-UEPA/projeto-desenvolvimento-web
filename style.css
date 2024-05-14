@@ -126,6 +126,50 @@ header {
 
 }
 
+<<<<<<< Updated upstream
+=======
+.forum{
+  display: flex;
+}
+.forum_main{
+  font-size: 20px;
+  
+}
+.forum_description{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+.main_forum{
+  background-color: white;
+  color: black;
+  margin: 10px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.forum_main{
+  font-style: none;
+  color: black;
+}
+
+.corpoTopicoForum{
+  margin: 2% 5% 0 5%;
+}
+
+.tituloTopicoForum{
+  font-size: 30px;
+}
+
+.textoTopicoForum{
+  font-size: 20px;
+  text-align: justify;
+}
+
+
+>>>>>>> Stashed changes
 .noticiaPrincipalDiv {
   display: flex;
   align-items: end;
@@ -204,6 +248,8 @@ header {
   border-radius: 15px;
   width: 275px;
 }
+
+
 
 .itensForumLink:hover {
   background-color: #D90D1E;
