@@ -126,6 +126,27 @@ header {
 
 }
 
+.forum{
+  display: flex;
+}
+.forum_main{
+  font-size: 20px;
+}
+.forum_description{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+.main_forum{
+  background-color: white;
+  color: black;
+  margin: 10px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
 .noticiaPrincipalDiv {
   display: flex;
   align-items: end;
