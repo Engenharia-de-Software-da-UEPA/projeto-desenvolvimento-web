@@ -454,6 +454,43 @@ footer {
   background-color: #D90D1E;
 }
 
+.forum {
+  display: flex;
+}
+.forum_main {
+  font-size: 20px;
+}
+.forum_description {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+.main_forum {
+  color: black;
+  margin: 10px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.criarTopicoBotaoForum {
+  justify-content: center;
+  text-decoration: none;
+  background-color: #110a69;
+  padding: 10px 15px;
+  margin-top: 30px;
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  border-radius: 15px;
+  width: 275px;
+}
+
+.criarTopicoBotaoForum:hover {
+  background-color: #D90D1E;
+}
+
 /* footer{
   position: fixed;
   bottom: 0;
