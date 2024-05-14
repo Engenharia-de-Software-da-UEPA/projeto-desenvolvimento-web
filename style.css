@@ -126,8 +126,45 @@ header {
 
 }
 
-<<<<<<< Updated upstream
-=======
+.forum{
+  display: flex;
+}
+.forum_main{
+  font-size: 20px;
+}
+.forum_description{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+.main_forum{
+  background-color: white;
+  color: black;
+  margin: 10px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.forumAlta{
+  margin-left: 20px;
+display: flex;
+align-items: start;
+text-align: start;
+justify-content: start;
+}
+
+.descAlta{
+  margin-left: 20px;
+display: flex;
+align-items: start;
+text-align: start;
+justify-content: start;
+}
+.forumList{
+  margin-top: 20px;
+}
 .forum{
   display: flex;
 }
@@ -169,7 +206,6 @@ header {
 }
 
 
->>>>>>> Stashed changes
 .noticiaPrincipalDiv {
   display: flex;
   align-items: end;
@@ -184,7 +220,7 @@ header {
 
 }
 
-.tituloNoticia {
+/*.tituloNoticia {
 
   background-color: white;
   border-radius: 10px;
@@ -195,7 +231,7 @@ header {
   margin-bottom: 10px;
   font-weight: bold;
 }
-
+*/
 
 .noticia {
   border-radius: 30px;
@@ -225,6 +261,8 @@ header {
   background-size: cover;
   background-position: bottom;
 }
+
+
 
 
 /*Botões da div de Fórum da tela inicial*/
@@ -404,7 +442,9 @@ footer {
   background-color: #2C2F73;
   color: #fff;
   letter-spacing: 1px;
-  width: 100%;
+  width: 100%
+  
+  
 }
 
 .rodape__uepa__hub__logo {
@@ -414,11 +454,13 @@ footer {
 }
 
 .rodape__conteudo {
+
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
   padding: 20px;
+  
 }
 
 .rodape__inserir__email {
