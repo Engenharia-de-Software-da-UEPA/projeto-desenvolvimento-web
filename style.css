@@ -132,6 +132,10 @@ header {
 .forum_main{
   font-size: 20px;
 }
+.estiloTituloForum{
+  text-decoration: none;
+  color: black;
+}
 .forum_description{
   display: flex;
   flex-direction: row;
@@ -168,10 +172,7 @@ justify-content: start;
 .forum{
   display: flex;
 }
-.forum_main{
-  font-size: 20px;
-  
-}
+
 .forum_description{
   display: flex;
   flex-direction: row;
@@ -185,11 +186,6 @@ justify-content: start;
   margin: 10px;
   margin-left: 100px;
   margin-right: 100px;
-}
-
-.forum_main{
-  font-style: none;
-  color: black;
 }
 
 .corpoTopicoForum{
@@ -500,9 +496,7 @@ footer {
 .forum {
   display: flex;
 }
-.forum_main {
-  font-size: 20px;
-}
+
 .forum_description {
   display: flex;
   flex-direction: row;
