@@ -3,6 +3,7 @@
 * {
   padding: 0;
   margin: 0;
+
 }
 
 *::selection {
@@ -18,23 +19,23 @@ li {
   list-style-type: none;
 }
 
+/* Configuração do cabeçalho*/
+
 header {
+
   background-color: #2C2F73;
   color: #fff;
   box-shadow: 10px 10px 20px rgba(26, 26, 26, 0.582);
-  padding: 0;
- 
 }
 
 .cabecalho__inicial {
   display: flex;
-  flex-flow: row nowrap;
+  flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
 }
 
 .cabecalho__inicial__logo {
-  position: relative;
   margin-top: 10px;
   margin-left: 20px;
   height: 75px;
@@ -49,13 +50,12 @@ header {
 }
 
 .cabecalho__inicial__perfil {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   gap: 10px;
 }
 
 .cabecalho__inicial__perfil__usuario {
-  display: inline;
   text-align: right;
   padding-top: 9px;
   font-weight: bold;
@@ -72,19 +72,18 @@ header {
   background-color: #414393;
   padding-left: 15px;
   height: 39px;
-
-}
-
-.cabecalho__itens {
-  list-style-type: none;
-  padding-top: 10px;
-  margin-top: 10px;
-
+  display: flex;
+  align-items: center;
 }
 
 .cabecalho__itens__item {
   display: inline;
+}
 
+.cabecalho__itens__link {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
 }
 
 .cabecalho__itens__link__selecionado {
@@ -94,113 +93,21 @@ header {
   padding: 10px 20px;
 }
 
-.cabecalho__itens__link {
-  color: #fff;
-  text-decoration: none;
-  padding: 10px 20px;
-
-}
-
 .cabecalho__itens__link:hover {
   background-color: #D90D1E;
 }
 
-/*Configurações das divs de Fórum e Notícias da Tela Inicial*/
+/*Configurações das Notícias da Tela Inicial*/
 
 .forumNoticias {
   margin: 30px 200px;
   display: grid;
-  grid-template-columns: repeat(4, minmax(300px, 200px));
+  grid-template-columns: repeat(4, minmax(300px, 300px));
   grid-auto-rows: minmax(160px, auto);
   gap: 30px 30px;
   justify-content: center;
 
 }
-
-.forumDiv {
-  border: 4px solid black;
-  border-radius: 30px;
-  text-align: center;
-  grid-row-end: span 4;
-  grid-column-end: span 2;
-
-}
-
-.forum{
-  display: flex;
-}
-.forum_main{
-  font-size: 20px;
-}
-.estiloTituloForum{
-  text-decoration: none;
-  color: black;
-}
-.forum_description{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  gap: 15px;
-  margin-bottom: 25px;
-}
-.main_forum{
-  background-color: white;
-  color: black;
-  margin: 10px;
-  margin-left: 100px;
-  margin-right: 100px;
-}
-
-.forumAlta{
-  margin-left: 20px;
-display: flex;
-align-items: start;
-text-align: start;
-justify-content: start;
-}
-
-.descAlta{
-  margin-left: 20px;
-display: flex;
-align-items: start;
-text-align: start;
-justify-content: start;
-}
-.forumList{
-  margin-top: 20px;
-}
-.forum{
-  display: flex;
-}
-
-.forum_description{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  gap: 15px;
-  margin-bottom: 25px;
-}
-.main_forum{
-  background-color: white;
-  color: black;
-  margin: 10px;
-  margin-left: 100px;
-  margin-right: 100px;
-}
-
-.corpoTopicoForum{
-  margin: 2% 5% 0 5%;
-}
-
-.tituloTopicoForum{
-  font-size: 30px;
-}
-
-.textoTopicoForum{
-  font-size: 20px;
-  text-align: justify;
-}
-
 
 .noticiaPrincipalDiv {
   display: flex;
@@ -215,19 +122,6 @@ justify-content: start;
   background-position: bottom;
 
 }
-
-/*.tituloNoticia {
-
-  background-color: white;
-  border-radius: 10px;
-  padding: 5px;
-  width: 500px;
-  height: 20px;
-  font-size: 19px;
-  margin-bottom: 10px;
-  font-weight: bold;
-}
-*/
 
 .noticia {
   border-radius: 30px;
@@ -258,16 +152,12 @@ justify-content: start;
   background-position: bottom;
 }
 
-
-
-
-/*Botões da div de Fórum da tela inicial*/
+/*Botões do Fórum da tela inicial*/
 
 .itensForumDiv {
   justify-content: center;
   display: flex;
   gap: 30px;
-
 }
 
 .itensForumLink {
@@ -283,8 +173,6 @@ justify-content: start;
   width: 275px;
 }
 
-
-
 .itensForumLink:hover {
   background-color: #D90D1E;
   color: white;
@@ -294,7 +182,38 @@ justify-content: start;
   background-color: #161e91;
 }
 
-/*Tela 2, Configurações do campo de noticias especificas*/
+/*Configurações do Fórum da Tela Inicial*/
+
+.forumDiv {
+  border: 4px solid black;
+  border-radius: 30px;
+  text-align: center;
+  grid-column-end: span 2;
+  grid-row-end: span 4;
+
+}
+
+.forumAlta {
+  margin-left: 20px;
+  display: flex;
+  align-items: start;
+  text-align: start;
+  justify-content: start;
+}
+
+.descAlta {
+  margin-left: 20px;
+  display: flex;
+  align-items: start;
+  text-align: start;
+  justify-content: start;
+}
+
+.forumListInicio {
+  margin-top: 20px;
+}
+
+/*Configurações do campo de noticias especificas*/
 
 .noticiasEspecificas {
 
@@ -304,7 +223,6 @@ justify-content: start;
   grid-template-columns: repeat(4, minmax(300px, 200px));
   grid-auto-rows: minmax(160px, auto);
   gap: 30px;
-
 }
 
 .noticiaEsp {
@@ -312,34 +230,35 @@ justify-content: start;
   text-align: center;
 }
 
-.recentes{
+.recentes {
   background-image: url(/imagens/Recentes.png);
   background-size: cover;
   background-position: bottom;
   background-position: center;
 }
-.campus{
+
+.campus {
   background-image: url(/imagens/uepaCampus.jpg);
   background-size: cover;
   background-position: bottom;
   background-position: center;
 }
 
-.biologia{
-  background-image: url(/imagens/Biologia.png);
-  background-size: cover;
-  background-position: bottom;
-  background-position: center;
-}
-
-.software{
+.software {
   background-image: url(/imagens/Software3.jpg);
   background-size: cover;
   background-position: bottom;
   background-position: center 250px;
 }
 
-.botoesNoticias {
+.biologia {
+  background-image: url(/imagens/Biologia.png);
+  background-size: cover;
+  background-position: bottom;
+  background-position: center;
+}
+
+.botoesNoticiasEspecificas {
   margin: 35px 200px;
   display: grid;
   justify-content: center;
@@ -349,7 +268,7 @@ justify-content: start;
 
 }
 
-.botoesNoticias a {
+.botoesNoticiasEspecificas a {
   display: flex;
   justify-content: center;
   text-decoration: none;
@@ -374,14 +293,14 @@ justify-content: start;
 
 @media (max-width: 1300px) {
   .forumNoticias {
-      grid-template-columns: repeat(2, minmax(300px, 200px));
-      grid-template-rows: repeat(8, minmax(300px, 200px));
+    grid-template-columns: repeat(2, minmax(300px, 200px));
+    grid-template-rows: repeat(8, minmax(300px, 200px));
   }
 }
 
- /*Configurações do calendário*/
+/*Configurações do calendário*/
 
- .container3 {
+.container3 {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -392,25 +311,9 @@ justify-content: start;
   margin: 30px 200px;
   display: grid;
   grid-template-columns: repeat(7, minmax(180px, 100px));
-  grid-template-rows: repeat(4, minmax(30px, auto));
+  grid-template-rows: repeat(5, minmax(30px, auto));
   justify-content: center;
   gap: 5px 5px;
-}
-
-.botaoVerMais{
-  display: flex;
-  justify-content: center;
-  text-decoration: none;
-  background-color: #110a69;
-  padding: 10px 0;
-  margin-top: 30px;
-  color: white;
-  font-size: 22px;
-  font-weight: bold;
-  border-radius: 15px;
-  width: 275px;
-  margin-bottom: 30px;
-  
 }
 
 .dias {
@@ -420,9 +323,10 @@ justify-content: start;
   align-content: center;
   font-weight: bold;
 }
+
 .diasNum {
   background-color: rgb(198, 198, 255);
-  grid-row-end: span 9;
+  grid-row-end: span 5;
   text-align: end;
 }
 
@@ -434,13 +338,70 @@ justify-content: start;
   font-size: 40px;
 }
 
+
+.botaoVerMais {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  background-color: #110a69;
+  color: white;
+  padding: 10px 0;
+  margin-top: 30px;
+  font-size: 22px;
+  font-weight: bold;
+  border-radius: 15px;
+  width: 275px;
+  margin-bottom: 30px;
+}
+
+/*Configurações das páginas principais de Fórum e Notícias */
+
+.main_forum {
+  color: black;
+  margin: 10px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.main_forum_noticia_topico {
+  font-size: 20px;
+}
+
+.forum_description {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+/*Configurações da discussão do forum exemplo */
+
+.estiloTituloForum {
+  text-decoration: none;
+  color: black;
+}
+
+.corpoTopicoForum {
+  margin: 2% 5% 0 5%;
+}
+
+.tituloTopicoForum {
+  font-size: 30px;
+}
+
+.textoTopicoForum {
+  font-size: 20px;
+  text-align: justify;
+}
+
+/*Configurações do rodapé*/
+
 footer {
   background-color: #2C2F73;
   color: #fff;
   letter-spacing: 1px;
   width: 100%
-  
-  
 }
 
 .rodape__uepa__hub__logo {
@@ -456,7 +417,7 @@ footer {
   align-items: center;
   justify-content: space-evenly;
   padding: 20px;
-  
+
 }
 
 .rodape__inserir__email {
@@ -482,7 +443,7 @@ footer {
 }
 
 .rodape__botao:hover {
-  background-color: #D90D1E;
+  background-color: white;
 }
 
 .rodape__link {
@@ -491,24 +452,6 @@ footer {
 
 .rodape__link:hover {
   background-color: #D90D1E;
-}
-
-.forum {
-  display: flex;
-}
-
-.forum_description {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  gap: 15px;
-  margin-bottom: 25px;
-}
-.main_forum {
-  color: black;
-  margin: 10px;
-  margin-left: 100px;
-  margin-right: 100px;
 }
 
 .criarTopicoBotaoForum {
